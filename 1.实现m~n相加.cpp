@@ -1,17 +1,16 @@
+//æœ¬é¢˜è¦æ±‚å®ç°ä¸€ä¸ªè®¡ç®—m~nï¼ˆm<nï¼‰ä¹‹é—´æ‰€æœ‰æ•´æ•°çš„å’Œçš„ç®€å•å‡½æ•°ã€‚
 #include <stdio.h>
 int main()
 {
-    int m=0,n=0;
+    int m=0;
+    int n=0;
     int sum=0;
-    printf("ÇëÊäÈëm~n£º");
     scanf ("%d %d",&m,&n);
-    int j=n-m+1;
-    int i=0;
-    for (i=0;i<j;i++)
+    int i,j; 
+    for (i=m,j=n;i<=j;i++)
     {
-        sum+=m;
-        m++;
+        sum+=i;
     }
-    printf("m~nÖ®¼äËùÓĞÊıÖ®ºÍÎª£º%d",sum);
+    printf("sum = %d",sum);
     return 0;
 }
